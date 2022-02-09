@@ -1,0 +1,24 @@
+nav {
+  position: fixed;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  border: none;
+  background: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+nav a {
+  text-decoration: none;
+}
+.dropdown {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+nav li:hover .dropdown {
+  display: block;
+}
