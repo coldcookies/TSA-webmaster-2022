@@ -17,7 +17,8 @@ nav li {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  height: 10vh;
+  height: auto;
+  padding: 2vh;
 }
 nav a, nav a:hover {
   text-decoration: none;
