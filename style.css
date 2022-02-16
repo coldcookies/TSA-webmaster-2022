@@ -19,15 +19,18 @@ nav li {
   cursor: pointer;
   height: auto;
   padding: 2vh;
+  color: #63474d;
 }
 nav a, nav a:hover {
   text-decoration: none;
+  color: #63474d;
 }
 .dropdown {
   position: absolute;
   left: 0;
   display: none;
   white-space: nowrap;
+  background-color: #d6a184ff;
 }
 nav li:hover .dropdown {
   display: block;
