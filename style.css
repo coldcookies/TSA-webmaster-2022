@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Raleway+Dots&display=swap');
 
+
+body {
+  font: 4vh "Raleway", sans-serif;
+}
 nav {
 position: fixed;
 font: 5vh "Raleway", sans-serif;
@@ -44,4 +48,5 @@ footer {
   bottom: 0; /* this attr can be removed later */
   background-color: #aa767cff;
   width: 100%;
+  padding: 5vh;
 }
