@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Raleway+Dots&display=swap');
 
-
 body {
   font: 4vh "Raleway", sans-serif;
 }
@@ -29,6 +28,8 @@ nav li {
 nav a, nav a:hover {
   text-decoration: none;
   color: #63474d;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .dropdown {
   position: absolute;
@@ -42,6 +43,19 @@ nav li:hover {
 }
 nav li:hover .dropdown {
   display: block;
+}
+#timerContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#timer {
+  font: 25vh "Raleway Dots", serif;
+  white-space: nowrap;
+  overflow: hidden;
 }
 footer {
   background-color: #aa767cff;
