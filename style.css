@@ -44,8 +44,6 @@ nav li:hover .dropdown {
   display: block;
 }
 footer {
-  position: absolute;
-  bottom: 0; /* this attr can be removed later */
   background-color: #aa767cff;
   width: 100%;
   padding: 5vh;
