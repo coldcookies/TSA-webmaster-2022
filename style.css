@@ -58,7 +58,7 @@ nav li:hover .dropdown {
   align-items: center;
 }
 #timer {
-  font: 25vh "Raleway Dots", serif;
+  font: 5vw "Raleway Dots", serif;
   white-space: nowrap;
   overflow: hidden;
 }
