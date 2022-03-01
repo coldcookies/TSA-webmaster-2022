@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@0;1&family=Raleway&family=Raleway+Dots&display=swap');
 
 body {
-  font: 4vh "Raleway", sans-serif;
+  font: 4vh "Fira Sans Condensed", sans-serif;
 }
 nav {
 position: fixed;
-font: 3vh "Raleway", sans-serif;
+font: 3vh "Fira Sans Condensed", sans-serif;
 background-color: #d6a184;
 width: 100%;
 }
@@ -43,6 +43,9 @@ nav li:hover {
 }
 nav li:hover .dropdown {
   display: block;
+}
+h1 {
+  font: italic 2vw "Raleway", serif;
 }
 #timerContainer {
   height: 100vh;
