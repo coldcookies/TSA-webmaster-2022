@@ -72,9 +72,9 @@ main {
   overflow: auto;
 }
 .section {
-  margin: 20vh 20vw;
+  height: 96vh;
+  padding: 20vh 20vw;
 }
-
 footer {
   background-color: #aa767cff;
   width: 100%;
