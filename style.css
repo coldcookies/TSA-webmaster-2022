@@ -70,10 +70,19 @@ h1 {
 main {
   background-color: #fffff0;
   overflow: auto;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+main > * {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .section {
-  height: 96vh;
+  height: 100vh;
   padding: 20vh 20vw;
+}
+.sectionText {
+  /*background image*/
 }
 footer {
   background-color: #aa767cff;
