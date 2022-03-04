@@ -77,9 +77,12 @@ main > * {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+main li {
+  list-style-type: disc;
+}
 .section {
   height: 100vh;
-  padding: 20vh 20vw;
+  padding: 20vh 20vw 0 20vw;
 }
 .sectionText {
   /*background image*/
