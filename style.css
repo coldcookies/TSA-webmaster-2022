@@ -84,9 +84,16 @@ main li {
 .section {
   height: 100vh;
   padding: 20vh 20vw 0 20vw;
+  display: flex;
+  justify-content: center;
 }
-.sectionText {
-  /*background image*/
+.textBg {
+  height: 75vh;
+  width: 60vw;
+  border-radius: 2em;
+  background-image: url("assets/paintbg.png");
+  background-position: left top;
+  background-size: 100% auto;
 }
 footer {
   background-color: #aa767cff;
