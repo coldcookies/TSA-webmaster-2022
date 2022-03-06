@@ -69,7 +69,8 @@ h1 {
 
 main {
   background-color: #fffff0;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 100vh;
   scroll-snap-type: y mandatory;
 }
