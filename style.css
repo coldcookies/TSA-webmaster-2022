@@ -89,11 +89,15 @@ main li {
 }
 .textBg {
   height: 75vh;
-  width: 60vw;
   border-radius: 2em;
-  background-image: url("assets/paintbg.png");
+  margin-bottom: 0;
+  background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
   background-position: bottom left;
   background-size: 100% auto;
+}
+.sectionText {
+  margin: 1em 0 auto 2em;
+  padding: 0;
 }
 footer {
   background-color: #aa767cff;
