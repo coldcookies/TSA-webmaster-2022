@@ -92,7 +92,7 @@ main li {
   width: 60vw;
   border-radius: 2em;
   background-image: url("assets/paintbg.png");
-  background-position: left top;
+  background-position: bottom left;
   background-size: 100% auto;
 }
 footer {
