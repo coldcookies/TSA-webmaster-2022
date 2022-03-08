@@ -11,3 +11,4 @@
     * why is the Sample Exhibits btn weird like that
     * parallax for the timer img
     * more background images
+    * accept or decline cookies
