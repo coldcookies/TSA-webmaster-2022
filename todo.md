@@ -12,3 +12,4 @@
     * parallax for the timer img
     * more background images
     * accept or decline cookies
+    * more variety on home page
