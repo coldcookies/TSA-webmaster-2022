@@ -13,3 +13,4 @@
     * more background images
     * accept or decline cookies
     * more variety on home page
+    * fix font sizes so that they mostly use the same units
