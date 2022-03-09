@@ -45,21 +45,24 @@ nav li:hover {
 nav li:hover .dropdown {
   display: block;
 }
-h1 {
+header {
+  text-align: center;
+  background-color: #63474d;
+  color: white;
+}
+#timerContainer h1 {
   font: italic 2vw "Fira Sans Condensed", serif;
 }
 #timerContainer {
   height: 100vh;
   width: 100%;
-  background-color: #63474d;
-  background-image: url("assets/met_tinted.jpeg");
-  background-position: center center;
-  background-size: 150% 150%;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("assets/met_tinted.jpeg");
+  background-position: center center;
+  background-size: 150% 150%;
 }
 #timer {
   font: 10vw "Raleway Dots", serif;
@@ -67,6 +70,10 @@ h1 {
   overflow: hidden;
 }
 
+#pageTitle h1 {
+  font: italic 5vw "Fira Sans Condensed", sans-serif;
+  padding-top: 12vh;
+}
 main {
   background-color: #fffff0;
   overflow-y: auto;
@@ -91,7 +98,7 @@ main li {
   height: 75vh;
   border-radius: 2em;
   margin-bottom: 0;
-  background-image: url("assets/paintbg.png");
+  background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
   background-position: bottom left;
   background-size: 100% auto;
 }
