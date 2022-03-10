@@ -46,16 +46,16 @@ width: 100%;
     display: block;
   }
 
-main {
+.info {
   display: grid;
   grid: 40vh 60vh 60vh 60vh / 45vw 55vw;
   gap: 1em;
 }
-  main header {
+  .info header {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-  main p, main img {
+  .info p, .info img {
     margin: 1em auto;
   }
 #index {
