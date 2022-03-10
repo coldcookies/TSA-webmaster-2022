@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html>
 
   <head>
-    <title>Stratocumulus Gallery</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen">
+
   </head>
 
   <body>
     <nav>
       <ul>
         <li>About<ul class="dropdown">
-            <li><a href="#">Stratocumulus Gallery</a></li><br>
+            <li><a href="index.html">Stratocumulus Gallery</a></li><br>
             <li><a href="#">Sample Exhibits</a></li>
           </ul>
         </li>
         <li>
-          <a href="register.html">Register</a>
+          <a href="#">Register</a>
         </li>
         <li>
           <a href="support_us.html">Support Us</a>
@@ -30,95 +30,34 @@
       </ul>
     </nav>
     <main>
-      <header id="timerContainer">
-        <h1 id="timer"></h1>
-        <script>
-          var countDownDate = new Date("Jun 22, 2022 12:00:00").getTime();
-          var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-            if (distance < 0) {
-              clearInterval(x);
-              document.getElementById("timer").innerHTML = "EXPIRED";
-            }
-          }, 1000);
-
-        </script>
-        <h1>Until the Opening of the Stratocumulus Gallery</h1>
+      <header id="pageTitle">
+        <h1>
+          Support the Stratocumulus Gallery
+        </h1>
       </header>
-      <div class="section">
-        <div class="textBg">
-          <div class="sectionText">          <p></p>
-          <p>Join us for the grand opening of the Stratocumulus Gallery on June 22nd, 2022! The Stratocumulus Gallery makes history and art come alive in your home with AR technology. It is a new way to experience museums and interact with history. Stratocumulus allows you to engage with prehistoric animals, travel to remote islands, and delve more closely into the art pieces you desire.</p>
-        </div>
-        </div>
+      <div>
+        <img class="sideImg" src="https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg">
+        <button>
+          Donate Now
+        </button>
       </div>
-      <div class="section">
-        <div class="textBg">
-          <div class="sectionText">
-            <p>
-              To start off the service with a bang, Stratocumulus will be hosting a guided tour to explore a series of art pieces created during the COVID-19 pandemic. Stratocumulus hopes to bridge the gap between museums and your home in order to make culture more accessible to everyone.
-            </p>
-            <p>The audio for the pandemic tour will be made available after the opening for free so that all users will be able to enjoy it at their leisure.</p>
-          </div>
-        </div>
+      <p>
+        Stratocumulus is currently kept alive by the efforts of two struggling high school students and a few hefty donations. Help fund Stratocumulus so that it can continue bringing art and culture into the home.
+      </p>
+      <div style="visibility: hidden;">
+        <h1>
+          How much would you like to donate?
+        </h1>
+        <button>$5</button><button>$10</button><button>$15</button><button>$20</button><button>$50</button><button>$75</button><button>$100</button><button>
+          Other<input>
+        </button>
+        <h1>
+          Payment Method
+        </h1>
+        <button><img></button><button>PayPal</button><button>Amazon Pay</button><button>Google Pay</button>
       </div>
-      <div class="section">
-        <div class="textBg">
-          <div class="sectionText">
-            <h1>Features</h1>
-            <ul>
-              <li>Users can walk through the museum and look at framed artwork</li>
-              <li>The user can bring up blurbs explaining each piece of art as well as links to more information</li>
-              <li>Audio tours</li>
-              <li>A VR headset isn't strictly necessary to use Stratocumulus, however it greatly improves the quality of the experience. We support the Oculus Quest 2 headset.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="textBg">
-          <div class="sectionText">
-            <h1>Recommended PC Specifications</h1>
-            <ul>
-              <li>OS: Windows 10</li>
-              <li>Processor: Intel® i5-6500 / AMD Ryzen 5 1600 equivalent or greater</li>
-              <li>Memory: 8 GB RAM</li>
-              <li>Graphics: NVIDIA GeForce® GTX 1060 / AMD Radeon™ RX 580 equivalent or greater</li>
-              <li>DirectX: Version 11</li>
-              <li>Network: Broadband Internet Connection (25+ megabit preferred)</li>
-              <li>Storage: 21.5GB (~1.5GB for application, remaining for content cache)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="textBg">
-          <div class="sectionText">
-            <h1>Minimum PC Specifications</h1>
-            <ul>
-              <li>OS: Windows 8.1, Windows 10</li>
-              <li>Processor: Intel® i5-4590 / AMD FX 8350 equivalent or greater</li>
-              <li>Memory: 4 GB RAM</li>
-              <li>Graphics: NVIDIA GeForce® GTX 970 / AMD Radeon™ R9 290 equivalent or greater</li>
-              <li>DirectX: Version 11</li>
-              <li>Network: Broadband Internet connection (25+ megabit preferred)</li>
-              <li>Storage: 21.5GB (~1.5GB for application, remaining for content cache)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <p>A submission for TSA Webmaster '22</p>
-        <a href="reference.html">Reference</a>
-      </footer>
+      <img class="sideImg" src="https://images.unsplash.com/photo-1603750003385-3342231a1ff1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzZXVtc3xlbnwwfHwwfHw%3D&w=1000&q=80">
     </main>
   </body>
+
 </html>
