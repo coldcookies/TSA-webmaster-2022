@@ -59,6 +59,7 @@ width: 100%;
     margin: 1em auto;
   }
 #index {
+  display: block;
   background-color: #fffff0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -94,12 +95,11 @@ header {
   #timerContainer h1 {
     font: italic 2vw "Fira Sans Condensed", serif;
   }
-  #timer {
+  #timerContainer #timer {
     font: 10vw "Raleway Dots", serif;
     white-space: nowrap;
     overflow: hidden;
-  }
-  
+  }  
 .section {
     height: 100vh;
     padding: 20vh 20vw 0 20vw;
