@@ -10,102 +10,129 @@ font: 3vh "Fira Sans Condensed", sans-serif;
 background-color: #d6a184;
 width: 100%;
 }
-nav > ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-nav li {
-  border: none;
-  background: none;
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  height: auto;
-  padding: 2vh 3vw;
-  color: #63474d;
-}
-nav a, nav a:hover {
-  text-decoration: none;
-  color: #63474d;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.dropdown {
-  position: absolute;
-  left: 0;
-  display: none;
-  white-space: nowrap;
-  background-color: #d6a184;
-}
-nav li:hover {
-  background-color: #e6b194;
-}
-nav li:hover .dropdown {
-  display: block;
-}
-header {
-  text-align: center;
-  background-color: #63474d;
-  color: white;
-}
-#timerContainer h1 {
-  font: italic 2vw "Fira Sans Condensed", serif;
-}
-#timerContainer {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("assets/met_tinted.jpeg");
-  background-position: center center;
-  background-size: 150% 150%;
-}
-#timer {
-  font: 10vw "Raleway Dots", serif;
-  white-space: nowrap;
-  overflow: hidden;
-}
+  nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav li {
+    border: none;
+    background: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: auto;
+    padding: 2vh 3vw;
+    color: #63474d;
+  }
+  nav a, nav a:hover {
+    text-decoration: none;
+    color: #63474d;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .dropdown {
+    position: absolute;
+    left: 0;
+    display: none;
+    white-space: nowrap;
+    background-color: #d6a184;
+  }
+  nav li:hover {
+    background-color: #e6b194;
+  }
+  nav li:hover .dropdown {
+    display: block;
+  }
 
-#pageTitle h1 {
-  font: italic 5vw "Fira Sans Condensed", sans-serif;
-  padding-top: 12vh;
-}
 main {
+  display: grid;
+  grid: 40vh 60vh 60vh 60vh / 45vw 55vw;
+  gap: 1em;
+}
+  main header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+  main p, main img {
+    margin: 1em auto;
+  }
+#index {
   background-color: #fffff0;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
   scroll-snap-type: y mandatory;
 }
-main > * {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  #index > * {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  #index li {
+    list-style-type: disc;
+  }
+  
+header {
+  background-color: #63474d;
+  color: white;
+  font: italic 6vw "Fira Sans Condensed", sans-serif;
+  padding-top: 6vh; /*make nav sticky so that this can be removed */
+  text-align: center;
 }
-main li {
-  list-style-type: disc;
-}
-.section {
+#timerContainer {
   height: 100vh;
-  padding: 20vh 20vw 0 20vw;
+  width: 100%;
+  background-image: url("assets/met_tinted.jpeg");
+  background-position: center center;
+  background-size: 150% 150%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.textBg {
-  height: 75vh;
-  border-radius: 2em;
-  margin-bottom: 0;
-  background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
-  background-position: bottom left;
-  background-size: 100% auto;
+  #timerContainer h1 {
+    font: italic 2vw "Fira Sans Condensed", serif;
+  }
+  #timer {
+    font: 10vw "Raleway Dots", serif;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+.section {
+    height: 100vh;
+    padding: 20vh 20vw 0 20vw;
+    display: flex;
+    justify-content: center;
+  }
+  .textBg {
+    height: 75vh;
+    border-radius: 2em;
+    margin-bottom: 0;
+    background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
+    background-position: bottom left;
+    background-size: 100% auto;
+  }
+  .sectionText {
+    margin: 1em 0 auto 2em;
+    padding: 0;
+  }
+.sideImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.sectionText {
-  margin: 1em 0 auto 2em;
-  padding: 0;
+button {
+  border: none;
+  font: 3vh "Fira Sans Condensed", sans-serif;
+  padding: 2vh 3vw;
+  background-color: #d6a184;
+  color: #63474d;
 }
+  button:hover {
+    background-color: #e6b194;
+  }
 footer {
   background-color: #aa767cff;
   width: 100%;
