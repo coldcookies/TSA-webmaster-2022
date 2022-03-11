@@ -46,20 +46,44 @@ width: 100%;
     display: block;
   }
 
-.info {
+main {
   display: grid;
-  grid: 40vh 60vh 60vh 60vh / 45vw 55vw;
   gap: 1em;
 }
-  .info header {
+  main p, main img {
+    margin: 1em auto;
+  }
+  #pageTitle {
+  background-color: #63474d;
+  color: white;
+  font: italic 6vw "Fira Sans Condensed", sans-serif;
+  padding-top: 6vh; /*make nav sticky so that this can be removed */
+  text-align: center;
   grid-column-start: 1;
   grid-column-end: 3;
 }
-  .info p, .info img {
-    margin: 1em auto;
+#supportUs {
+  grid: 40vh 60vh auto 60vh / 45vw 55vw;
+}
+  #supportUs > button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #donateMenu {
+    display: inline-grid;
+    grid: 20% 20% 20% 20% 20% / 33% 33% 33%;
+    gap: 0;
+  }
+  #donateMenu h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  #donateMenu input {
+    border: 1px solid #63474d;
+    width: 50%;
+    height: 50%;
   }
 #index {
-  display: block;
   background-color: #fffff0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -74,13 +98,6 @@ width: 100%;
     list-style-type: disc;
   }
   
-header {
-  background-color: #63474d;
-  color: white;
-  font: italic 6vw "Fira Sans Condensed", sans-serif;
-  padding-top: 6vh; /*make nav sticky so that this can be removed */
-  text-align: center;
-}
 #timerContainer {
   height: 100vh;
   width: 100%;
@@ -95,11 +112,12 @@ header {
   #timerContainer h1 {
     font: italic 2vw "Fira Sans Condensed", serif;
   }
-  #timerContainer #timer {
+  #timer {
     font: 10vw "Raleway Dots", serif;
     white-space: nowrap;
     overflow: hidden;
-  }  
+  }
+  
 .section {
     height: 100vh;
     padding: 20vh 20vw 0 20vw;
@@ -124,6 +142,8 @@ header {
   object-fit: cover;
 }
 button {
+  height: 10vh;
+  width: 15vw;
   border: none;
   font: 3vh "Fira Sans Condensed", sans-serif;
   padding: 2vh 3vw;
@@ -137,4 +157,6 @@ footer {
   background-color: #aa767cff;
   width: 100%;
   padding: 5vh;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
