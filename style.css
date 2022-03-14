@@ -46,11 +46,11 @@ width: 100%;
     display: block;
   }
 
-main {
+main:not(#index) {
   display: grid;
   gap: 1em;
 }
-  main p, main img {
+  main:not(#index) p, main:not(#index) img {
     margin: 1em auto;
   }
   #pageTitle {
@@ -101,15 +101,17 @@ main {
 #timerContainer {
   height: 100vh;
   width: 100%;
+  background-color: #63474d;
   background-image: url("assets/met_tinted.jpeg");
   background-position: center center;
   background-size: 150% 150%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-  #timerContainer h1 {
+#timerContainer h2 {
     font: italic 2vw "Fira Sans Condensed", serif;
   }
   #timer {
@@ -117,7 +119,6 @@ main {
     white-space: nowrap;
     overflow: hidden;
   }
-  
 .section {
     height: 100vh;
     padding: 20vh 20vw 0 20vw;
