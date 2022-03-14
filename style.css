@@ -142,6 +142,10 @@ main:not(#index) {
   height: 100%;
   object-fit: cover;
 }
+.gridMenuCover {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 button {
   height: 10vh;
   width: 15vw;
