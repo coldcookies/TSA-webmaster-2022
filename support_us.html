@@ -8,28 +8,28 @@
   </head>
 
   <body>
-  <header>
-    <nav>
-      <ul>
-        <li>About<ul class="dropdown">
-            <li><a href="index.html">Stratocumulus Gallery</a></li><br>
-            <li><a href="#">Sample Exhibits</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Register</a>
-        </li>
-        <li>
-          <a href="support_us.html">Support Us</a>
-        </li>
-        <li>
-          <a href="#">Help Center</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li>About<ul class="dropdown">
+              <li><a href="index.html">Stratocumulus Gallery</a></li><br>
+              <li><a href="#">Sample Exhibits</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Register</a>
+          </li>
+          <li>
+            <a href="support_us.html">Support Us</a>
+          </li>
+          <li>
+            <a href="#">Help Center</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main id="supportUs">
       <div id="pageTitle">
@@ -43,10 +43,10 @@
       <p>
         Stratocumulus is currently kept alive by the efforts of two struggling high school students and a few hefty donations. Help fund Stratocumulus so that it can continue bringing art and culture into the home.
       </p>
-      <button>
+      <button id="donateBtn">
         Donate Now
       </button>
-      <div id="donateMenu" style="">
+      <div id="donateMenu" style="display:none;">
         <h1>
           How much would you like to donate?
         </h1>
@@ -58,11 +58,22 @@
         </h1>
         <button></button><button>PayPal</button><button>Amazon Pay</button>
       </div>
-      <img class="sideImg" src="https://images.unsplash.com/photo-1603750003385-3342231a1ff1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzZXVtc3xlbnwwfHwwfHw%3D&w=1000&q=80">
-          <footer>
-      <p>A submission for TSA Webmaster '22</p>
-      <a href="reference.html">Reference</a>
-    </footer>
+      <img class="sideImg gridMenuCover" src="https://images.unsplash.com/photo-1603750003385-3342231a1ff1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzZXVtc3xlbnwwfHwwfHw%3D&w=1000&q=80">
+      <footer>
+        <p>A submission for TSA Webmaster '22</p>
+        <a href="reference.html">Reference</a>
+      </footer>
     </main>
+    <script>
+      document.getElementById("donateBtn").addEventListener("click", () => {
+        let menuCoverImg = document.getElementsByClassName("gridMenuCover")[0];
+        menuCoverImg.classList.remove("gridMenuCover");
+        let donateMenu = document.getElementById("donateMenu");
+        let donateBtn = document.getElementById("donateBtn");
+        donateMenu.style.display = "block";
+      });
+
+    </script>
   </body>
+
 </html>
