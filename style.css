@@ -53,36 +53,6 @@ main:not(#index) {
   main:not(#index) p, main:not(#index) img {
     margin: 1em auto;
   }
-  #pageTitle {
-  background-color: #63474d;
-  color: white;
-  font: italic 6vw "Fira Sans Condensed", sans-serif;
-  padding-top: 6vh; /*make nav sticky so that this can be removed */
-  text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-#supportUs {
-  grid: 40vh 60vh auto 60vh / 45vw 55vw;
-}
-  #supportUs > button {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  #donateMenu {
-    display: inline-grid;
-    grid: 20% 20% 20% 20% 20% / 33% 33% 33%;
-    gap: 0;
-  }
-  #donateMenu h1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-  #donateMenu input {
-    border: 1px solid #63474d;
-    width: 50%;
-    height: 50%;
-  }
 #index {
   background-color: #fffff0;
   overflow-y: auto;
@@ -129,7 +99,7 @@ main:not(#index) {
     height: 75vh;
     border-radius: 2em;
     margin-bottom: 0;
-    background-image: url("assets/paintbg.png");
+    background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
     background-position: bottom left;
     background-size: 100% auto;
   }
@@ -137,6 +107,37 @@ main:not(#index) {
     margin: 1em 0 auto 2em;
     padding: 0;
   }
+  #pageTitle {
+  background-color: #63474d;
+  color: white;
+  font: italic 6vw "Fira Sans Condensed", sans-serif;
+  padding-top: 6vh; /*make nav sticky so that this can be removed */
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#supportUs {
+  grid: 40vh 60vh auto 60vh 25vh / 45vw 55vw;
+}
+  #donateBtn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #donateMenu div {
+    display: flex;
+    flex-direction: row;
+  }
+  #donateMenu input {
+    border: 1px solid #63474d;
+    width: 50%;
+    height: 50%;
+  }
+button img {
+  max-height: 60%;
+  position: relative;
+  bottom: 50%;
+  transform: translateY(50%);
+}
 .sideImg {
   width: 100%;
   height: 100%;
@@ -149,9 +150,9 @@ main:not(#index) {
 button {
   height: 10vh;
   width: 15vw;
+  padding: 2vh 3vw;
   border: none;
   font: 3vh "Fira Sans Condensed", sans-serif;
-  padding: 2vh 3vw;
   background-color: #d6a184;
   color: #63474d;
 }
