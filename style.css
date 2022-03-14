@@ -129,7 +129,7 @@ main:not(#index) {
     height: 75vh;
     border-radius: 2em;
     margin-bottom: 0;
-    background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
+    background-image: url("assets/paintbg.png");
     background-position: bottom left;
     background-size: 100% auto;
   }
