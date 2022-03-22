@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@0;1&family=Raleway&family=Raleway+Dots&display=swap');
 
 body {
-  font: 4vh "Raleway", sans-serif;
+  font: 2vw "Raleway", sans-serif;
   overflow-x: hidden;
 }
 nav {
 position: fixed;
-font: 3vh "Fira Sans Condensed", sans-serif;
+font: 1vw "Fira Sans Condensed", sans-serif;
 background-color: #d6a184;
 width: 100%;
 }
@@ -91,21 +91,23 @@ main:not(#index) {
   }
 .section {
     height: 100vh;
-    padding: 20vh 20vw 0 20vw;
+    padding: 10vw 20vw 0 20vw;
     display: flex;
     justify-content: center;
   }
   .textBg {
-    height: 75vh;
+    height: 30vw;
+    width: 90vw;
     border-radius: 2em;
     margin-bottom: 0;
-    background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
+    background-image: url("assets/paintbg.png");
     background-position: bottom left;
     background-size: 100% auto;
   }
   .sectionText {
-    margin: 1em 0 auto 2em;
+    margin: 1rem 1.5rem;
     padding: 0;
+    font: 1.25vw "Raleway", sans-serif;
   }
   #pageTitle {
   background-color: #63474d;
