@@ -113,13 +113,13 @@ main:not(#index) {
   background-color: #63474d;
   color: white;
   font: italic 6vw "Fira Sans Condensed", sans-serif;
-  padding-top: 6vh; /*make nav sticky so that this can be removed */
+  padding-top: 3vw; 
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 #supportUs {
-  grid: 40vh 60vh auto 60vh 25vh / 45vw 55vw;
+  grid: 20vw 30vw auto 30vw auto / 45vw 55vw;
 }
   #donateBtn {
     grid-column-start: 1;
@@ -150,11 +150,11 @@ button img {
   grid-column-end: 3;
 }
 button {
-  height: 10vh;
+  height: 4vw;
   width: 15vw;
   padding: 2vh 3vw;
   border: none;
-  font: 3vh "Fira Sans Condensed", sans-serif;
+  font: 1vw "Fira Sans Condensed", sans-serif;
   background-color: #d6a184;
   color: #63474d;
 }
@@ -164,7 +164,7 @@ button {
 footer {
   background-color: #aa767cff;
   width: 100%;
-  padding: 5vh;
+  padding: 2vw;
   grid-column-start: 1;
   grid-column-end: 3;
 }
