@@ -48,12 +48,15 @@ width: 100%;
   .mobileOnly {
       display: none;
   }
-@media only screen and (max-width: 700px) {
+@media (max-width: 320px), (max-width: 480px)  {
     .mobileOnly {
         width: 60%;
         font-size: 3vw;
         height: auto;
         display: block;
+    }
+    nav {
+        display: none;
     }
 }
 main:not(#index) {
