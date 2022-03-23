@@ -55,6 +55,9 @@ width: 100%;
         height: auto;
         display: block;
     }
+    nav {
+        display: none;
+    }
 }
 main:not(#index) {
   display: grid;
