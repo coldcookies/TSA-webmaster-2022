@@ -6,7 +6,7 @@ body {
 }
 nav {
 position: fixed;
-font: 2vw "Fira Sans Condensed", sans-serif;
+font: 1vw "Fira Sans Condensed", sans-serif;
 background-color: #d6a184;
 width: 100%;
 }
@@ -26,7 +26,7 @@ width: 100%;
     padding: 2vh 3vw;
     color: #63474d;
   }
-  nav a, nav a:hover {
+  nav a, nav a:hover, button a, button a:hover {
     text-decoration: none;
     color: #63474d;
     white-space: nowrap;
@@ -45,7 +45,17 @@ width: 100%;
   nav li:hover .dropdown {
     display: block;
   }
-
+  .mobileOnly {
+      display: none;
+  }
+@media only screen and (max-width: 700px) {
+    .mobileOnly {
+        width: 60%;
+        font-size: 3vw;
+        height: auto;
+        display: block;
+    }
+}
 main:not(#index) {
   display: grid;
   gap: 1em;
@@ -100,7 +110,7 @@ main:not(#index) {
     width: 90vw;
     border-radius: 2em;
     margin-bottom: 0;
-    background-image: url("assets/paintbg.png");
+    background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
     background-position: bottom left;
     background-size: 100% auto;
   }
