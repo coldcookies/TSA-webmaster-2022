@@ -48,6 +48,7 @@ width: 100%;
   .mobileOnly {
       display: none;
   }
+  
 @media (max-width: 320px), (max-width: 480px)  {
     .mobileOnly {
         width: 60%;
@@ -58,7 +59,15 @@ width: 100%;
     nav {
         display: none;
     }
-}
+    
+    .textBg {
+      height: 100%;
+    }
+    
+    .sectionText {
+      font-size: 8vw;
+    }
+ }
 main:not(#index) {
   display: grid;
   gap: 1em;
@@ -109,18 +118,19 @@ main:not(#index) {
     justify-content: center;
   }
   .textBg {
-    height: 30vw;
+    height: 70%;
     width: 90vw;
     border-radius: 2em;
     margin-bottom: 0;
-    background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
+    background-image: url("assets/paintbg.png");
     background-position: bottom left;
     background-size: 100% auto;
+    background-repeat: no-repeat;
   }
   .sectionText {
     margin: 1rem 1.5rem;
     padding: 0;
-    font: 1.25vw "Raleway", sans-serif;
+    font: 1.5vw "Raleway", sans-serif;
   }
   #pageTitle {
   background-color: #63474d;
