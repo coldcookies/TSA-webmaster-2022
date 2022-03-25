@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@0;1&family=Raleway&family=Raleway+Dots&display=swap');
 
 body {
-  font: 2vw "Raleway", sans-serif;
+  font: 0.75rem "Raleway", sans-serif;
   overflow-x: hidden;
 }
 nav {
 position: fixed;
-font: 1vw "Fira Sans Condensed", sans-serif;
+font: 1rem "Fira Sans Condensed", sans-serif;
 background-color: #d6a184;
 width: 100%;
 }
@@ -48,26 +48,17 @@ width: 100%;
   .mobileOnly {
       display: none;
   }
-  
-@media (max-width: 320px), (max-width: 480px)  {
+@media only screen and (max-width: 700px) {
     .mobileOnly {
         width: 60%;
-        font-size: 3vw;
+        font-size: 1rem;
         height: auto;
         display: block;
     }
-    nav {
-        display: none;
+    body {
+      font-size: 2rem;
     }
-    
-    .textBg {
-      height: 100%;
-    }
-    
-    .sectionText {
-      font-size: 8vw;
-    }
- }
+}
 main:not(#index) {
   display: grid;
   gap: 1em;
@@ -104,10 +95,10 @@ main:not(#index) {
   align-items: center;
 }
 #timerContainer h2 {
-    font: italic 2vw "Fira Sans Condensed", serif;
+    font: italic 1.5rem "Fira Sans Condensed", serif;
   }
   #timer {
-    font: 10vw "Raleway Dots", serif;
+    font: 5rem "Raleway Dots", serif;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -118,24 +109,23 @@ main:not(#index) {
     justify-content: center;
   }
   .textBg {
-    height: 70%;
+    height: 30vw;
     width: 90vw;
-    border-radius: 2em;
+    border-radius: 4vw;
     margin-bottom: 0;
-    background-image: url("assets/paintbg.png");
+    background-image: url("https://drive.google.com/uc?export=view&id=1Iz889wgdKfVVdyzycz2UdF_kMxiHrmVy");
     background-position: bottom left;
     background-size: 100% auto;
-    background-repeat: no-repeat;
   }
   .sectionText {
     margin: 1rem 1.5rem;
     padding: 0;
-    font: 1.5vw "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   #pageTitle {
   background-color: #63474d;
   color: white;
-  font: italic 6vw "Fira Sans Condensed", sans-serif;
+  font: italic 5rem "Fira Sans Condensed", sans-serif;
   padding-top: 3vw; 
   text-align: center;
   grid-column-start: 1;
